@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 
 // create a component which produces some html
 
-const App = function () {
+const App = () => {
     return <div>Hey There</div>
 }
 
 
 //take generated HTML and put into DOM
 
-ReactDOM.render(App);
+ReactDOM.render(<App />, document.querySelector('.container'));
