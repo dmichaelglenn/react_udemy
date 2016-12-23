@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//class based components are used when state needs to be tracked; functional components when we're just spitting out jsx 
 class SearchBar extends Component {
 
     constructor(props) {
