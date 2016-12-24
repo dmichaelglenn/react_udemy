@@ -1,6 +1,7 @@
 import React from 'react';
 
 const VideoDetail = ({video}) => {
+    //just adding this little check prevents a null error when the page is loading, because we don't get a "null" property back before the API has grabbed a video. Only add this when it's neccesarry, usually high-level components. He called it an "ajax spinner"
     if (!video) {
         return <div>Loading...</div>;
     }
